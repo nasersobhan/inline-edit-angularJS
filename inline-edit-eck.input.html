@@ -1,0 +1,6 @@
+<div>
+    <input class="inline-editinput" type="text" ng-blur="save()" on-enter="save()" on-esc="cancel()" ng-model="model" ng-show="editMode">
+    <span ng-mouseenter="showEdit = true" ng-mouseleave="showEdit = false">
+      <span ng-hide="editMode" ng-click="edit()">{{model}}</span>
+    </span>
+  </div>
